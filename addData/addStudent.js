@@ -1,5 +1,5 @@
-const docClient = require('./dynamoClient');
-const { PutCommand } = require('@aws-sdk/lib-dynamodb');
+const docClient = require("../dynamoClient");
+const { PutCommand } = require("@aws-sdk/lib-dynamodb");
 
 const students = [
   {
@@ -87,7 +87,7 @@ const students = [
 async function addStudents() {
   for (const student of students) {
     const input = {
-      TableName: 'Students',
+      TableName: "Students",
       Item: student,
     };
 
