@@ -1,4 +1,4 @@
-const docClient = require("../dynamoClient");
+const docClient = require("./dynamoClient");
 const { PutCommand } = require("@aws-sdk/lib-dynamodb");
 
 const classes = [
